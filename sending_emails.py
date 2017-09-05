@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 
 from_address ="ib.wy.test01@gmail.com"
 password = "rosekate9999"
-to="ankit.tiwari@webyog.com"
+to="ib.wy.test02@gmail.com"
 server= smtplib.SMTP('smtp.gmail.com', 587)
 
 #message = """From:ib.wy.test01@gmail.com To:ankit.tiwari@webyog.com  Subject: SMTP e-mail test
@@ -34,12 +34,12 @@ html = """<h1> THis is a test html email <img src = "https://lh3.googleuserconte
 
 msg.attach(MIMEText(html,'html'))
 
-text = str(msg)
+content = str(msg)
 
 def sendmail():
     server.starttls()
     server.login(user=from_address,password=password)
-    server.sendmail(from_address,to,msg=text)
+    server.sendmail(from_address,to,msg=content)
 
 
 sendmail()
