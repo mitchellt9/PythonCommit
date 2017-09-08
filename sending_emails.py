@@ -44,6 +44,7 @@ content = str(msg)
 def sendmail():
     try:
         server.starttls()
+        print("test print")
         server.login(user=from_address,password=password)
         server.sendmail(from_address,to,msg=content)
         print("Email sent to:"+ to)
