@@ -9,7 +9,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from_address ="ib.wy.test01@gmail.com"
-password = "rosekate9999"
+password = "FILL IN LATER"
 to="ib.wy.test02@gmail.com"
 server= smtplib.SMTP('smtp.gmail.com', 587)
 # random_number=str(random.random())
